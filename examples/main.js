@@ -16,6 +16,10 @@ Vue.component('demo-block', demoBlock)
 
 Vue.config.productionTip = false
 
+import JKUI from 'jk-ui'
+import 'jk-ui/theme-default/lib/index.css'
+Vue.use(JKUI)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

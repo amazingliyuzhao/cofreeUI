@@ -1,0 +1,95 @@
+/* 飞读样式规范 */
+
+/* 颜色代码v2.2.0+ */
+  /* 中性色 */
+  $c101: #FFFFFF;
+  $C102: rgba(30, 32, 34, 0.05);
+  $C103: rgba(30, 32, 34, 0.2);
+  $C104: rgba(30, 32, 34, 0.35);
+  $C105: rgba(30, 32, 34, 0.5);
+  $C106: #1E2022;
+  $C108: #e6e6e6;
+  $C109: rgba(30, 32, 34, 0.1);
+  $C110: rgba(30, 32, 34, 0.85);
+  $C111: rgba(30, 32, 34, 0.02);
+  $C112: #E6E6E6;
+
+  /* 品牌色 */
+  $C201: rgba(41, 170, 255, 1); // 主色调 #29AAFF
+  $C202: rgba(41, 170, 255, 0.8); // 主色调点击态
+  $C203: rgba(41, 170, 255, 0.4); // 主色调不可用态
+
+  /* 辅色 */
+  $C301: #FF652B; // 福利主色态
+  $C401: #FF5252;
+  $C501: #C281F0;
+  $C601: #F2CD55;
+  $C701: #58DB7C;
+  $C801: #C9B17A;
+  $C802: #6F4A00;
+  $C803: #889DB3;
+
+/* 字号代码v2.2.0+ */
+$T0: 0.20*2rem;
+$T1: 0.18*2rem;
+$T2: 0.15*2rem;
+$T7: 0.16*2rem;
+$T8: 0.14*2rem;
+$T9: 0.22*2rem;
+
+/* 颜色代码v1 */
+$BLACK: #11141A;
+$BLACK70: rgba(17, 20, 26, 0.7);
+$BLACK60: rgba(17, 20, 26, 0.6);
+$BLACK50: rgba(17, 20, 26, 0.5);
+$BLACK35: rgba(17, 20, 26, 0.35);
+$BLACK30: rgba(17, 20, 26, 0.3);
+$BLACK20: rgba(17, 20, 26, 0.2);
+$BLACK15: rgba(17, 20, 26, 0.15);
+$BLACK5: rgba(17, 20, 26, 0.05);
+$BLACK2: rgba(17, 20, 26, 0.02);
+$BLUE: rgba(41, 170, 255, 1);
+$BLUE_ACTIVE: rgba(41, 170, 255, 0.8);
+$BLUE_DISABLED: rgba(41, 170, 255, 0.4);
+$ORANGE: #FF652B;
+$RED: #FF5252;
+$MAUVE: #C281F0;
+$GREEN: #58DB7C;
+$GOLDEN: #C9B17A;
+$WHITE: #FFF;
+$BG: #E6E6E6;
+
+/* 字重 */
+$REGULAR: normal;
+$MEDIUM: bolder;
+
+/* 间距 */
+$L1: 0.48rem;
+$L2: 0.32rem;
+$L3: 0.28rem;
+$L4: 0.24rem;
+$L5: 0.20rem;
+$L6: 0.16rem;
+$L7: 0.12rem;
+$L8: 0.08rem;
+$L9: 0.04rem;
+
+
+$C102: rgba($color: #1E2022, $alpha: .05);
+$C103: rgba($color: #1E2022, $alpha: .2);
+$C104: rgba($color: #1E2022, $alpha: .35);
+$C105: rgba($color: #1E2022, $alpha: .5);
+
+
+
+$browser-default-font-size: 16px !default;
+
+@function pxTorem($px){
+    @return $px / $browser-default-font-size * 1rem;
+}
+.test {
+    font-size: $browser-default-font-size;
+}
+.test {
+    font-size: pxTorem(12px);
+}

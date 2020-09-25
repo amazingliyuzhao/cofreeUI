@@ -4,9 +4,11 @@
 */
 import Vue from 'vue'
 import CButton from './button/index'
-
+import CDialog from './dialog/index'
+import './theme-default/css/index.css'
 const components = [
     CButton,
+    CDialog
 ]
 
 // void function () {
@@ -25,4 +27,5 @@ const install = function(Vue) {
 export default {
   install,
   CButton,
+  CDialog
 }

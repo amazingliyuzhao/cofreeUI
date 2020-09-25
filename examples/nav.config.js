@@ -27,6 +27,11 @@ module.exports = {
         desc: "Tag 标签",
         path: "/cofree/tag",
         name: "tag"
+      },
+      {
+        desc: "弹窗",
+        path: "/cofree/dialog",
+        name: "dialog"
       }
     ]
   },
@@ -39,7 +44,7 @@ module.exports = {
         name: "button"
       },
       {
-        desc: "Tag 标签",
+        desc: "Tag标签",
         path: "/tag",
         name: "tag"
       }
