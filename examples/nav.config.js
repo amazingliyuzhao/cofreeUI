@@ -13,6 +13,11 @@ module.exports = {
       name: 'install',
       path: '/install',
       desc: '安装'
+    },
+    {
+      name: 'build',
+      path: '/build',
+      desc: '开发引导'
     }
   ],
   "飞读": [{
