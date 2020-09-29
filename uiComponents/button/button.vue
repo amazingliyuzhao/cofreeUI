@@ -36,18 +36,30 @@
   }
 </script>
 <style lang='scss'>
+// @import url('../theme-default/css/option.css');
+
+.c-button.is-show{
+  $browser-default-font-size: 50px !default;
+  @function pxTorem($px){
+    @return $px / $browser-default-font-size * 1rem;
+  }
+  // font-size: pxTorem(12px);
+}
 .c-button{
+  @function pxTorem($px){
+    @return $px * 5;
+  }
   box-sizing: border-box;
   border: 0;
   outline: none;
-  height: 64px;
+  height: pxTorem(0.56rem);
   background-color: #72c0f0;
   color: #ffffff;
-  border-radius: 8px;
-  padding: 0 32px;
-  min-width: 144px;
+  border-radius: pxTorem(0.08rem);
+  padding: 0 pxTorem(0.32rem);
+  min-width: pxTorem(1.44rem);
   &.c-button-size-default{
-    font-size:30px;
+    font-size:pxTorem(0.3rem);
   }
   &.c-button-style2{
     background-color: #ef6e3e;
@@ -64,8 +76,8 @@
     background-color: #7bd886;
   }
   &.c-button-size-small{
-    height: 56px;
-    font-size: 26px;
+    height: pxTorem(0.56rem);
+    font-size: pxTorem(0.26rem);
   }
 }
 </style>

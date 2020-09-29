@@ -7,8 +7,6 @@
                     background-color="#545c64"
                     text-color="#fff"
                     active-text-color="#ffd04b"
-                    default-active="$route.path"
-                    router
                 >
                     <el-submenu v-for="title in Object.keys(slideItem)" :key="title" :index="title">
                         <template slot="title">
@@ -23,7 +21,7 @@
                                         :index="value.path"
                                         v-for="(value,index) in val.items"
                                         :key="index"
-                                        @click.stop="goDtail(value.path)"
+                                        @click="goDtail(value.path)"
                                     >{{value.desc}}</el-menu-item>
                                 </el-menu-item-group>
                             </div>
@@ -31,7 +29,7 @@
                                 <template v-if="val.name">
                                     <el-menu-item
                                         :index="val.path"
-                                        @click.stop="goDtail(val.path)"
+                                        @click="goDtail(val.path)"
                                     >{{val.desc}}</el-menu-item>
                                 </template>
                             </div>
@@ -39,7 +37,6 @@
                     </el-submenu>
                 </el-menu>
             </el-aside>
-
             <el-container>
                 <el-header style="text-align: right; font-size: 12px">
                     <!-- <el-dropdown>
@@ -94,7 +91,6 @@ export default {
         },
         initPage() {
             console.log(navList)
-
             // Object.keys(navList).forEach((item) => {
             //     this.slideItem =  this.slideItem.concat(navList[item])
             // })

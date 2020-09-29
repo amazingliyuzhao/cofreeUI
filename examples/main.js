@@ -8,6 +8,8 @@ import CUI from '../uiComponents/index'
 import './assets/css/common.css'
 Vue.use(CUI)
 
+Vue.config.devtools = true
+
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
