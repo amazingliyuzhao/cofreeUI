@@ -50,7 +50,8 @@
                     <span>王小虎</span>-->
                 </el-header>
                 <el-main>
-                    <router-view />
+                    <Main></Main>
+                    <!-- <router-view /> -->
                 </el-main>
             </el-container>
         </el-container>
@@ -73,6 +74,7 @@
 </style>
 <script>
 import navList from '../../nav.config.js'
+import Main from './main.vue'
 export default {
     data() {
         const item = {
@@ -84,6 +86,9 @@ export default {
             tableData: Array(20).fill(item),
             slideItem: navList
         }
+    },
+    components:{
+        Main
     },
     methods: {
         goDtail(path) {

@@ -29,15 +29,14 @@ let addComponent = (router) => {
     } else {
       route.component = (r) => {
         require.ensure([], ()=>{
-          console.log(r)
           return (r(require(`../docs/${route.name}.md`)))
-
         })
       }
     }
   })
 }
 addComponent(routes)
+console.log('-----')
 console.log(routes)
 
 export default new Router({

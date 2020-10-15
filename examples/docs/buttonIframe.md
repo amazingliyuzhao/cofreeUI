@@ -1,25 +1,5 @@
-### 按钮文案
+### 带iframe的按钮展示
 
-<div class="demo-box">
-  <div class="demo-block">
-    <div>
-        <c-button type="style1" :isShow = 'true'>默认按钮</c-button>
-        <c-button type="style2">默认按钮</c-button>
-        <c-button type="style3">默认按钮</c-button>
-        <c-button type="style4">默认按钮</c-button>
-        <c-button type="style5">默认按钮</c-button>
-    </div>
-     <div style='marginTop:10px'>
-        <c-button type="style1" size='small'>默认按钮</c-button>
-        <c-button type="style2" size='small'>默认按钮</c-button>
-        <c-button type="style3" size='small'>默认按钮</c-button>
-        <c-button type="style4" size='small'>默认按钮</c-button>
-        <c-button type="style5" size='small'>默认按钮</c-button>
-        <i class="c-icon-weixin fs-24"></i>
-        <i class="c-icon-shoucang fs-24"></i>
-    </div>
-  </div>
-</div>
 
   ::: demo
   ```html
@@ -30,6 +10,13 @@
         <c-button type="style4">默认按钮</c-button>
         <c-button type="style5">默认按钮</c-button>
     </div>
+    <div>
+       <c-button type="style1" size='small'>默认按钮</c-button>
+        <c-button type="style2" size='small'>默认按钮</c-button>
+        <c-button type="style3" size='small'>默认按钮</c-button>
+        <c-button type="style4" size='small'>默认按钮</c-button>
+        <c-button type="style5" size='small'>默认按钮</c-button>
+    </div>
   ```
   :::
 
@@ -39,3 +26,8 @@
 | size     | 尺寸   | string  |   default,small            |    —     |
 | type     | 类型   | string    |   style1,style2,style3 |     —    |
 | disabled  | 是否禁用状态    | boolean   | —   | false   |
+
+<div class="phone">
+    <iframe src="http://localhost:8086/#/"></iframe>
+    <div class="statusbar"></div>
+</div>

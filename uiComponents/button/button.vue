@@ -1,9 +1,9 @@
 <template>
-  <button
+    <button
     @click="$emit('click')"
-    class="c-button"
+    class="c-button show"
     :disabled="disabled"
-    :class="['c-button-'+type,{'is-plain': plain, 'is-disabled': disabled, 'is-round': round, 'is-show':isShow},'c-button-size-'+size ]">
+    :class="['c-button-'+type,{'is-plain': plain, 'is-disabled': disabled, 'is-round': round, 'show':isShow},'c-button-size-'+size ]">
    <slot></slot>
   </button>
 </template>
@@ -36,23 +36,22 @@
   }
 </script>
 <style lang='scss'>
+ @import "../theme-default/css/option.scss";
 // @import url('../theme-default/css/option.css');
+//  $size:1;
 
-.c-button.is-show{
-  $browser-default-font-size: 50px !default;
-  @function pxTorem($px){
-    @return $px / $browser-default-font-size * 1rem;
-  }
-  // font-size: pxTorem(12px);
-}
 .c-button{
-  @function pxTorem($px){
-    @return $px * 5;
+  &.ishow{
+    $size:5;
+    color: $C501;
+
   }
+  @function pxTorem($px){
+      @return $px * $size
+    };
   box-sizing: border-box;
   border: 0;
   outline: none;
-  height: pxTorem(0.56rem);
   background-color: #72c0f0;
   color: #ffffff;
   border-radius: pxTorem(0.08rem);
@@ -60,6 +59,7 @@
   min-width: pxTorem(1.44rem);
   &.c-button-size-default{
     font-size:pxTorem(0.3rem);
+     height: pxTorem(0.64rem);
   }
   &.c-button-style2{
     background-color: #ef6e3e;

@@ -29,6 +29,11 @@ module.exports = {
         name: "button"
       },
       {
+        desc: "Button按钮-Iframe展示",
+        path: "/cofree/buttoniframe",
+        name: "buttonIframe"
+      },
+      {
         desc: "Tag 标签",
         path: "/cofree/tag",
         name: "tag"

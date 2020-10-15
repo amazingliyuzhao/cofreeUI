@@ -40,7 +40,6 @@ const vueMarkdown = {
       // 用于校验包含demo的代码块
       validate: params => params.trim().match(/^demo\s*(.*)$/),
       render: function (tokens, idx) {
-
         var m = tokens[idx].info.trim().match(/^demo\s*(.*)$/);
         if (tokens[idx].nesting === 1) {
           var desc = tokens[idx + 2].content;

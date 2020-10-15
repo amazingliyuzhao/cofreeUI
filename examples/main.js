@@ -6,6 +6,7 @@ import router from './router'
 import demoBlock from './components/demoBlock/demoBlock.vue'
 import CUI from '../uiComponents/index'
 import './assets/css/common.css'
+import '../uiComponents/theme-default/css/index.css'
 Vue.use(CUI)
 
 Vue.config.devtools = true
@@ -18,9 +19,7 @@ Vue.component('demo-block', demoBlock)
 
 Vue.config.productionTip = false
 
-import JKUI from 'jk-ui'
-import 'jk-ui/theme-default/lib/index.css'
-Vue.use(JKUI)
+
 
 /* eslint-disable no-new */
 new Vue({
